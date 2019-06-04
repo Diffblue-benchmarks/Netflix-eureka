@@ -175,8 +175,33 @@ phases:
       # instrument the file as opposed to the function only
       cover-only: file
 units:
- - target:
-   - dir: eureka-client/build/classes/main
-     file: com/netflix/discovery/util/StringUtil.class
-     sourceDir: eureka-client/src/main/java
-     sourceFile: com/netflix/discovery/util/StringUtil.java
+  # Target Coverage: Unknown %
+  - target:
+    - dir: eureka-client/out/production/classes
+      file: com/netflix/discovery/util/EurekaEntityFunctions.class
+      sourceDir: eureka-client/src/main/java
+      sourceFile: com/netflix/discovery/util/EurekaEntityFunctions.java
+    # Child of EurekaEntityFunctions.class
+    # Child Coverage: Unknown %
+    - dir: eureka-client/out/production/classes
+      file: com/netflix/discovery/shared/Application.class
+      sourceDir: eureka-client/src/main/java
+      sourceFile: com/netflix/discovery/shared/Application.java
+    # Child of EurekaEntityFunctions.class
+    # Child Coverage: Unknown %
+    - dir: eureka-client/out/production/classes
+      file: com/netflix/discovery/shared/Applications.class
+      sourceDir: eureka-client/src/main/java
+      sourceFile: com/netflix/discovery/shared/Applications.java
+    # Child of EurekaEntityFunctions.class
+    # Child Coverage: Unknown %
+    - dir: eureka-client/out/production/classes
+      file: com/netflix/discovery/util/EurekaEntityTransformers.class
+      sourceDir: eureka-client/src/main/java
+      sourceFile: com/netflix/discovery/util/EurekaEntityTransformers.java
+    # Child of EurekaEntityFunctions.class
+    # Child Coverage: Unknown %
+    - dir: eureka-client/out/production/classes
+      file: com/netflix/appinfo/InstanceInfo.class
+      sourceDir: eureka-client/src/main/java
+      sourceFile: com/netflix/appinfo/InstanceInfo.java
